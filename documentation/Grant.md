@@ -8,9 +8,11 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | awardNumber* | String | Award number from funder |
 | externalId 	| [Identifier](Identifier.md) | Award number or ID assigned to the grant within the researcher's institution e.g. from COEUS |
 | projectName* | String | Title of the research project |
-| funder* | [Funder](Funder.md) | Sponsor of grant |
+| primaryFunder* | [Funder](Funder.md) | Primary sponsor of grant |
+| otherFunders | List[[Funder](Funder.md)] | Other sponsors of grant |
 | pi* | [Person](Person.md) | Principal investigator |
 | coPis | List[[Person](Person.md)] | Co-principal investigator list |
+| awardDate* | DateTime | Date the grant was awarded |
 | startDate | DateTime | Date the grant started |
 | endDate | DateTime | Date the grant ended |
 | alternateIds | List[Identifier] | Other identifiers _need examples, do we need these?_ |
