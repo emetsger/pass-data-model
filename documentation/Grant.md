@@ -6,7 +6,7 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | ------------- | ------------- | ------------- |
 | id* 			| String 	| Unique grant identifier |
 | awardNumber* | String | Award number from funder |
-| externalId 	| [Identifier](Identifier.md) | Award number or ID assigned to the grant within the researcher's institution e.g. from COEUS |
+| localAwardId 	| String | Award number or ID assigned to the grant within the researcher's institution |
 | projectName* | String | Title of the research project |
 | primaryFunder* | [Funder](Funder.md) | Primary sponsor of grant |
 | otherFunders | List[[Funder](Funder.md)] | Other sponsors of grant |
@@ -15,7 +15,6 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | awardDate* | DateTime | Date the grant was awarded |
 | startDate | DateTime | Date the grant started |
 | endDate | DateTime | Date the grant ended |
-| alternateIds | List[Identifier] | Other identifiers _need examples, do we need these?_ |
 | oapCompliance | Boolean | true if compliant, false if not compliant |
 | submissions | List[[Submission](Submission.md)] | Submissions related to Grant |
 | creator* | [User](User.md) | User who created record in PASS |

@@ -12,7 +12,6 @@ The data model consists of the following components. Each is documented in full 
 * [Deposit](documentation/Deposit.md)
 * [Funder](documentation/Funder.md)
 * [Grant](documentation/Grant.md)
-* [Identifier](documentation/Identifier.md)
 * [Journal](documentation/Journal.md)
 * [Person](documentation/Person.md)
 * [Publisher](documentation/Publisher.md)
