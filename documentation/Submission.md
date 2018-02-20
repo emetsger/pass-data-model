@@ -3,6 +3,7 @@ Details of a submission that can be managed through PASS.
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
+| id* | String | Unique Submission ID |
 | status* |  String: _need to define options_ | Status of Submission |
 | title* | String | Title of work represented by Submission e.g. the title of the article |
 | authors* | List[[Person](Person.md)]  | List of authors for work represented by Submission |

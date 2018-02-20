@@ -4,6 +4,7 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
+| id* 			| String 	| Unique grant identifier |
 | awardNumber* | String | Award number from funder |
 | externalId 	| [Identifier](Identifier.md) | Award number or ID assigned to the grant within the researcher's institution e.g. from COEUS |
 | projectName* | String | Title of the research project |
@@ -17,5 +18,6 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | submissions | List[[Submission](Submission.md)] | Submissions related to Grant |
 | creator* | [User](User.md) | User who created record in PASS |
 | creationDate* | DateTime | Date the record was created |
+| updatedDate* | DateTime | Date the record was last updated |
 
 *required

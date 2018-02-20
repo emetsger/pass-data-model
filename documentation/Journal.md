@@ -4,9 +4,12 @@ A [Submission](submission) may be a manuscript from a Journal. The journal may h
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
+| id* | String | Unique repository ID |
 | name* | String | Name of the journal |
 | issn | List[Identifier] | Journal ISSNs |
 | nlmta | String | _what is this?_ |
 | pmcParticipation | String | For PubMed Central specifically, this determines the route for submission. |
+| creationDate* | DateTime | Date the record was created |
+| updatedDate* | DateTime | Date the record was last updated |
 
 *required
