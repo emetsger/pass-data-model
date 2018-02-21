@@ -15,7 +15,6 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | awardDate* | DateTime | Date the grant was awarded |
 | startDate | DateTime | Date the grant started |
 | endDate | DateTime | Date the grant ended |
-| oapCompliance | Boolean | true if compliant, false if not compliant |
 | submissions | List[[Submission](Submission.md)] | Submissions related to Grant |
 | creator* | [User](User.md) | User who created record in PASS |
 | __creationDate*__ | DateTime | Date the record was created |

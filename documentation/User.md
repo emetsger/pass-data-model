@@ -6,7 +6,7 @@ A user of the PASS system
 | ------------- | ------------- | ------------- |
 | __id*__ | String | Unique User URI |
 | username* | String | Unique login name used by user |
-| usergroups* | List[String] | User's group for assignment to departmental groups. _Need more complex? could be one instead of list?_|	
+| _tbd_ | _tbd_ | _Additional fields are required to support user groups and authentication_ |
 | role* | String | User role |
 | person* | [Person](Person.md) | Person associated with the account |
 | __creationDate*__ | DateTime | Date the record was created |

@@ -1,5 +1,6 @@
 # Person
-A person who has either a [Grant](Grant.md) or a [Submission](Submission.md) associated with them.
+
+A person who has either a [Grant](Grant.md) or a [Submission](Submission.md) associated with them. All [Users](User.md) must be associated with a Person.
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
@@ -11,7 +12,7 @@ A person who has either a [Grant](Grant.md) or a [Submission](Submission.md) ass
 | email* | String | Contact email for person |
 | institutionalId | String | ID assigned by person's institution |
 | orcidId | String | ORCID ID for the person |
-| affiliation | String | Institution name |
+| affiliation | String | Affiliation string for the person. Where Person is embedded in a Submission or Grant, this is the affiliation relevant to that item.  |
 | __creationDate*__ | DateTime | Date the record was created |
 | __updatedDate*__ | DateTime | Date the record was last updated |
 

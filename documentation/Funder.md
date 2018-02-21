@@ -7,7 +7,7 @@ Funder / sponsor of a [Grant](Grant.md).
 | __id*__ | String | Unique Funder URI |
 | name* | String | Funder name |  
 | url | String | Funder URL |
-| policies | List[[Policy](Policy.md)] | Policies associated with funders  |
+| policy | [Policy](Policy.md) | Policy associated with funders  |
 | __creationDate*__ | DateTime | Date the record was created |
 | __updatedDate*__ | DateTime | Date the record was last updated |
 
