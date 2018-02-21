@@ -5,10 +5,10 @@ A policy determines what rules should be followed by a [Submission](Submission.m
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
 | __id*__ | String | Unique Policy URI |
-| type* | String: _university_, _funder_ | Type of policy - whether implemented by funder, or the institution hosting PASS _Note: this is still a bit squishy, but could be used for logic to create a default repo_|
 | title* | String | Title of policy e.g. "NIH Public Access Policy" |
 | description | String | Several sentence description of policy |
 | repositories* | List[[Repository](Repository.md)] | List of repositories that can satisfying this policy |
+| isDefault | Boolean | True if this policy should appear for all submission. This can be used to identify a policy or policies that should show up for everything  |
 | __creationDate*__ | DateTime | Date the record was created |
 | __updatedDate*__ | DateTime | Date the record was last updated |
 

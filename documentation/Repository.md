@@ -7,8 +7,7 @@ A Repository is the target of a [Deposit](Deposit.md)
 | __id*__ | String | Unique Repository URI |
 | name* | String | Name of repository e.g. "PubMed Central" |
 | description | String | Several sentence description of repository |
-| url | String | URL of repository where user can view existing content |
-| templateUrl | String | Template of URL to resolve repository ID shown in [Deposit](Deposit.md)|
+| url | String | URL to the homepage of the repository so that PASS users can view the platform before deciding whether to participate in it |
 | __creationDate*__ | DateTime | Date the record was created |
 | __updatedDate*__ | DateTime | Date the record was last updated |
 

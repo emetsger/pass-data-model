@@ -1,6 +1,6 @@
 # Deposit
 
-A [Submission](Submission.md) that is to be deposited, or has already been deposited, to a specific [Repository](Repository.md)
+A [Submission](Submission.md) can have multiple Deposits, each to a different [Repository](Repository.md). This model describes a single deposit to a [Repository](Repository.md) and captures its current status.
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
@@ -8,6 +8,7 @@ A [Submission](Submission.md) that is to be deposited, or has already been depos
 | status* | Enum ([_see list below_](#status-options)) | Status of deposit |
 | repository* 	| [Repository](Repository.md) | Repository being deposited to |
 | assignedId | String | ID assigned by repository |
+| accessUrl | String | URL to access the item in the repository, could allow Users to see the final result |
 | requested | Boolean | True if deposit was requested by user rather than required by a policy |
 | creator*	| [User](User.md)|User who created record in PASS
 | __creationDate*__ | DateTime | Date the record was created |
