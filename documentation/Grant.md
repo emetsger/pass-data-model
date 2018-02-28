@@ -9,8 +9,8 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | awardStatus | Enum ([_see list below_](#status-options)) | Status of award | 
 | localAwardId 	| String | Award number or ID assigned to the grant within the researcher's institution |
 | projectName* | String | Title of the research project |
-| primaryFunder* | [Funder](Funder.md) | Primary sponsor of grant |
-| otherFunders | List[[Funder](Funder.md)] | Other sponsors of grant |
+| primaryFunder* | [Funder](Funder.md) | The sponsor that is the original source of the funds. This will often be the same as directFunder. |
+| directFunder* | [Funder](Funder.md) | The organization from which funds are directly received. This will often be the same as primaryFunder. |
 | pi* | [Person](Person.md) | Principal investigator |
 | coPis | List[[Person](Person.md)] | Co-principal investigator list |
 | awardDate* | DateTime | Date the grant was awarded |
