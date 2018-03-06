@@ -32,5 +32,5 @@ The data model consists of the following components. Each is documented in full 
 
 JSON-LD contexts used to interpret PASS JSON as RDF can be found in the [src/main/resources](src/main/resources) folder of this project. These can be incorporated into `POST`s or `PUT`s by adding the following property to the JSON e.g.
 ```
-"@context": "http://oa-pass.github.io/pass-data-model/src/main/resources/context.jsonld"
+"@context": "https://oa-pass.github.io/pass-data-model/src/main/resources/context.jsonld"
 ```
