@@ -9,8 +9,6 @@ A policy determines what rules should be followed by a [Submission](Submission.m
 | description | String | Several sentence description of policy |
 | repositories* | List[[Repository](Repository.md)] | List of repositories that can satisfying this policy |
 | isDefault | Boolean | True if this policy should appear for all submission. This can be used to identify a policy or policies that should show up for everything  |
-| __created*__ | DateTime | Date the record was created |
-| __lastModified*__ | DateTime | Date the record was last modified |
  
 *required 
 
