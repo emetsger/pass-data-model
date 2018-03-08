@@ -10,7 +10,7 @@ In this project you will find
 The Ember application is available in a [separate repository](https://github.com/DataConservancy/pass-ember).
 
 ## Model Objects
-The data model consists of the following components. Each is documented in full on its own page, you can see a all of these pages in the [documentation](documentation/) folder
+The data model consists of the following components. Each is documented in full on its own page, you can see all of these pages in the [documentation](documentation/) folder
 
 * [Deposit](documentation/Deposit.md)
 * [Funder](documentation/Funder.md)
@@ -23,6 +23,8 @@ The data model consists of the following components. Each is documented in full 
 * [Submission](documentation/Submission.md)
 * [User](documentation/User.md)
 * [Workflow](documentation/Workflow.md)
+
+The system also automatically creates additional properties for each entity. These are documented in [System Properties](SystemProperties.md).
 
 ## Model Diagram
  
