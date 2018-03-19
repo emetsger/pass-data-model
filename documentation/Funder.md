@@ -8,6 +8,7 @@ Funder / sponsor of a [Grant](Grant.md).
 | name* | String | Funder name |  
 | url | String | Funder URL |
 | policy | [Policy](Policy.md) | Policy associated with funders  |
+| localId | String | ID assigned to the funder within the researcher's institution  |
  
 *required 
 
