@@ -1,5 +1,5 @@
 # Submission
-Details of a submission that can be managed through PASS.
+This captures the details of a submission that can be managed through PASS. A submission holds information about a single publication that can be [deposited](Deposit.md) into one or more [respositories](Repository.md). For publications that are associated with one or more [Grants](Grant.md), each unique PI should have a separate submission in PASS for that publication, as each will need to comply with the [policies](Policy.md) of their specific [funder](Funder.md). This means that where there is more than one grant in a submission, they must all have the same PI.
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
@@ -13,7 +13,7 @@ Details of a submission that can be managed through PASS.
 | volume | String | Volume of journal that contains item (if article) |
 | issue | String | Issue of journal that contains item (if article) |
 | deposits | List[[Deposit](Deposit.md)] | List of places the submission will be deposited to |
-| grants | List[[Grant](Grant.md)] | List of grants associated with the submission |
+| grants | List[[Grant](Grant.md)] | List of grants related to the publication being submitted. The grant PI determines who can perform the submission, and where there are multiple grants associated, they should all have the same PI. If a grant has a different PI, it should be a separate submission. |
 | workflows | List[[Workflow](Workflow.md)] | Workflows track the status of submission process |
 | submittedDate | DateTime | Date the record was submitted by the [User](User.md) through PASS |
  
