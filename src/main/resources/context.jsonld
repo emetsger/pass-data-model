@@ -52,7 +52,7 @@
     "steps": {"@id": "pass:steps"},    
     "type": {"@id": "pass:type"},
     "title": {"@id": "pass:title"},
-    "submissions": {"@id": "pass:submissions", "@container": "@set"},
+    "submissions": {"@id": "pass:submissions", "@container": "@set", "@type": "@id"},
     "submittedDate": {"@id": "pass:submittedDate", "@type": "xsd:dateTime"},
     "updatedDate": {"@id": "pass:updatedDate", "@type": "xsd:dateTime"},
     "uri": {"@id": "pass:uri"},    
