@@ -10,6 +10,7 @@ A [Submission](Submission.md) can have multiple Deposits, each to a different [R
 | assignedId | String | ID assigned by repository |
 | accessUrl | String | URL to access the item in the repository, could allow Users to see the final result |
 | requested | Boolean | True if deposit was requested by user rather than required by a policy |
+| submission | [Submission](Submission.md) | Submission this deposit is a part of |
  
 *required 
 
