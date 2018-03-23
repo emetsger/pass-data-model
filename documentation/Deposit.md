@@ -10,6 +10,7 @@ A [Submission](Submission.md) can have multiple Deposits, each to a different [R
 | assignedId | String | ID assigned by repository |
 | accessUrl | String | URL to access the item in the repository, could allow Users to see the final result |
 | requested | Boolean | True if deposit was requested by user rather than required by a policy |
+| userActionRequired | Boolean | True if the Deposit has stalled due to a need for further action by the [User](User.md). This action may need to take place outside of the scope of the PASS system, e.g. contact NIHMS to complete submission. When set to true, if other Deposits are in compliance, this will cause the [Submission status](Submission.md#status-options) to become `non-compliant-in-progress`. If the Deposit is stalled due to e.g. a system error and the User does not need to take action, this should remain false. |
  
 *required 
 
@@ -17,10 +18,13 @@ A [Submission](Submission.md) can have multiple Deposits, each to a different [R
 
 ## Status options
 
-These are the possible statuses for a Deposit
+These are the possible statuses for a Deposit in the order they could occur. Note that not all repositories will go through every status.
 
-| Value  		| Description |
-| ------------- | ------------- |
-| prepared | Deposits that have been created, sitting in our system, waiting to be sent off |
-| deposited | Deposits that have left the queue and sent off to their target repository |
-| ... | _Others to be determined by use cases, possibly "received", "awaiting approval" etc._ |
+| Value  		  | Description |
+| --------------- | ------------- |
+| in-preparation | In progress in the PASS GUI |
+| ready-to-submit | User has clicked to submit, but the deposit has not yet been sent to the repository |
+| submitted | PASS has sent files to the repository and is waiting for an update on the status |
+| received | The target repository has indicated that the files have been received |
+| in-progress | The target repository is processing the files |
+| accepted | The target repository has accepted the files, and publication is pending if not already complete |
