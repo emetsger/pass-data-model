@@ -33,13 +33,14 @@ In addition to the fields above, NIHMS requires submissions to capture the follo
 
 ## Status options
 
-These are the possible statuses for a Submission
+These are the possible statuses for a Submission in the order they would occur. Note that not all Submissions will go through every status.
 
-| Value  		| Description |
-| ------------- | ------------- |
-| compliant | Submission is in compliance with policies required by funders, publishers, or institution |
-| non-compliant | Submission is not in compliance with policies required by funders, publishers, or institution |
-| in-progress | Submission is currently in the process of becoming compliant |
+| Value  					| Description |
+| -------------------------- | ------------- |
+| non-compliant-not-started | The submission is not yet in compliance with applicable policies. One or more required [Deposits](Deposit.md) have not been initiated. |
+| non&#8209;compliant&#8209;in&#8209;progress | All required [Deposits](Deposit.md) for the Submission have been initiated, but at least one could not be completed and may require additional work by the user before being classified as compliant (`Deposit.userActionRequired=true`). For example, if a User does not respond to the final approval email from the repository, the Deposit may not be completed within the compliance timeframe  |
+| compliant-in-progress | Submission is in compliance with all known applicable policies. All of the required [Deposits](Deposit.md) have been initiated, but at least one has not yet reached the `Accepted` status. There is time remaining for the process to finish within the compliance timeframe. |
+| compliant-complete | Submission is in compliance with all known applicable policies. All related [Deposits](Deposit.md) have a status of Accepted |
 
 
 ## Source options
