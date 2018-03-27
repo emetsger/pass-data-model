@@ -10,6 +10,7 @@ A [Submission](Submission.md) can have multiple Deposits, each to a different [R
 | assignedId | String | ID assigned by repository |
 | accessUrl | String | URL to access the item in the repository, could allow Users to see the final result |
 | requested | Boolean | True if deposit was requested by user rather than required by a policy |
+| submission | [Submission](Submission.md) | Submission this deposit is a part of |
 | userActionRequired | Boolean | True if the Deposit has stalled due to a need for further action by the [User](User.md). This action may need to take place outside of the scope of the PASS system, e.g. contact NIHMS to complete submission. When set to true, if other Deposits are in compliance, this will cause the [Submission status](Submission.md#status-options) to become `non-compliant-in-progress`. If the Deposit is stalled due to e.g. a system error and the User does not need to take action, this should remain false. |
  
 *required 
