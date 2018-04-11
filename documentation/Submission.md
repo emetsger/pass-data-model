@@ -13,9 +13,7 @@ This captures the details of a submission that can be managed through PASS. A su
 | journal | URI | URI of [Journal](Journal.md) the Submission is part of (if article) |
 | volume | String | Volume of journal that contains item (if article) |
 | issue | String | Issue of journal that contains item (if article) |
-| deposits | List[URI] | List of URIs for [Deposits](Deposit.md) made for the submission will be deposited to |
 | grants | List[URI] | List of URIs for [Grants](Grant.md) related to the publication being submitted. The grant PI determines who can perform the submission, and where there are multiple grants associated, they should all have the same PI. If a grant has a different PI, it should be a separate submission. |
-| workflows | List[URI] | List of URIs for [Workflows](Workflow.md) that track the status of submission process |
 | submittedDate | DateTime | Date the record was submitted by the [User](User.md) through PASS |
 | source* | Enum ([_see list below_](#source-options)) | Indicates whether the record came from outside of PASS as an import, or was created through the system |
  

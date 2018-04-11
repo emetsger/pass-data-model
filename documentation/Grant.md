@@ -16,7 +16,6 @@ Grants/awards are received by one or more [Persons](Person.md) and can have 0 or
 | awardDate* | DateTime | Date the grant was awarded |
 | startDate | DateTime | Date the grant started |
 | endDate | DateTime | Date the grant ended |
-| submissions | List[URI] | List of URIs for [Submissions](Submission.md) related to Grant |
  
 *required 
 

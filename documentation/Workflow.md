@@ -8,6 +8,7 @@ The Workflow tracks the current status of a [Submission](Submission.md) process 
 | name* | String | Name of workflow |
 | step* | String | Current step in workflow |
 | steps* | String | Comma-separated list of steps required in workflow |
+| submission* | URI | URI for the [Submission](Submission.md) that this workflow is a part of |
 
 *required 
 
