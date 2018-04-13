@@ -4,7 +4,7 @@ These properties are captured automatically for all entity types, but are not vi
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
-| __createdBy__ | User | The [User](User.md) that created the record |
+| __createdBy__ | URI | URI of the [User](User.md) that created the record |
 | __created__ | DateTime | Date the record was created |
-| __lastModifiedBy__ | User | The [User](User.md) that last modified the record |
+| __lastModifiedBy__ | URI | URI of the [User](User.md) that last modified the record |
 | __lastModified__ | DateTime | Date the record was last modified |
