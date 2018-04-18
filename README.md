@@ -12,17 +12,19 @@ The Ember application is available in a [separate repository](https://github.com
 ## Model Objects
 The data model consists of the following components. Each is documented in full on its own page, you can see all of these pages in the [documentation](documentation/) folder
 
+* [Contributor](documentation/Contributor.md)
 * [Deposit](documentation/Deposit.md)
+* [File](documentation/File.md)
 * [Funder](documentation/Funder.md)
 * [Grant](documentation/Grant.md)
 * [Journal](documentation/Journal.md)
-* [Person](documentation/Person.md)
 * [Policy](documentation/Policy.md)
+* [Publication](documentation/Publication.md)
 * [Publisher](documentation/Publisher.md)
 * [Repository](documentation/Repository.md)
+* [RepositoryCopy](documentation/RepositoryCopy.md)
 * [Submission](documentation/Submission.md)
 * [User](documentation/User.md)
-* [Workflow](documentation/Workflow.md)
 
 The system also automatically creates additional properties for each entity. These are documented in [System Properties](SystemProperties.md).
 

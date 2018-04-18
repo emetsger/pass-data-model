@@ -1,6 +1,6 @@
 # Publisher
 
-A [journal](Journal.md) publisher
+A [Journal](Journal.md) publisher
 
 | Field  		| Type  		| Description |
 | ------------- | ------------- | ------------- |
