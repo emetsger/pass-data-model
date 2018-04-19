@@ -77,6 +77,6 @@
     "url": {"@id": "pass:url", "@type": "@id"},
     "user": {"@id": "pass:user", "@type": "@id"},
     "username": {"@id": "pass:username"},
-    "volume": {"@id": "pass:volume"},
+    "volume": {"@id": "pass:volume"}
   }
 }
