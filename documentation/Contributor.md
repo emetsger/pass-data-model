@@ -10,7 +10,6 @@ A Contributor is a person who contributed to a [Publication](Publication.md). Th
 | lastName | String | Last name(s) of person |
 | displayName | String | Name for display. Separate names may not be available, but a person should always at least have a display name. |
 | email | String | Contact email for person |
-| institutionalId | String | ID assigned by person's institution |
 | orcidId | String | ORCID ID for the person |
 | affiliation | String | Affiliation string for the person. Where Person is embedded in a Submission or Grant, this is the affiliation relevant to that item.  |
 | roles | List[Enum] ([_see list below_](#roles-options)) | One or more roles that this Contributor performed for the associated [Publication](Publication.md) |
