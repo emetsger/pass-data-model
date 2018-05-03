@@ -21,6 +21,7 @@ These are the possible statuses for a Deposit in the order they could occur. Not
 
 | Value  		  | Description |
 | --------------- | ------------- |
-| accepted | The target repository has indicated that the Deposit has been accepted|
-| in-progress | The target repository is processing the files |
-| complete | The target repository has accepted the files, and publication is pending if not already complete |
+| accepted | The target [Repository](Repository.md) has indicated that the Deposit has been accepted|
+| in-progress | The target [Repository](Repository.md) is processing the files |
+| stalled | The target [Repository](Repository.md) has detected a problem that has caused the progress to stall. This will likely require some direct interaction with the repository to re-initiate the process. Examples include, when there are incorrect files, or when a user did not respond to a validation request in a resonable time. |
+| complete | The target [Repository](Repository.md) has accepted the files, and publication is pending if not already complete |
