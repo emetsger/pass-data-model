@@ -41,6 +41,7 @@
     "grants": {"@id": "pass:grants", "@container": "@set", "@type": "@id"}, 
     "institution": {"@id": "pass:institution", "@type": "@id"},
     "institutionalId": {"@id": "pass:instutionalId"},
+    "integrationType": {"@id": "pass:integrationType"},     
     "issue": {"@id": "pass:issue"},
     "issns": {"@id": "pass:issn", "@container": "@set"},
     "lastName": {"@id": "pass:lastName"},
