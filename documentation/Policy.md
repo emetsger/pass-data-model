@@ -9,8 +9,7 @@ A Policy describes the access compliance requirements for a specific [Funder](Fu
 | description | String | Several sentence description of policy |
 | policyUrl | URI | A link to the actual policy on the policy-owner's page |
 | repositories* | List[URI] | List of URIs for [Repositories](Repository.md) that can satisfying this Policy |
-| institution | URI | URI of the Institution whose Policy this is (note: if instution has a value, funder will be null). For the first version of PASS, there will be no actual Institution model, this will be added at a later date, so if there is an institution assigned, it will always be JHU |
-| funder | URI | URI of the Funder whose Policy this is (note: if funder has a value, institution will be null)  |
+| institution | URI | URI of the Institution whose Policy this is. For the first version of PASS, there will be no actual Institution model, this will be added at a later date, so if there is an institution assigned, it will always be JHU |
  
 *required 
 
