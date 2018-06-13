@@ -23,4 +23,5 @@ These are the possible statuses for a Deposit in the order they could occur. Not
 | --------------- | ------------- |
 | submitted | PASS has sent a package to the target [Repository](Repository.md) and is waiting for an update on the status |
 | rejected | The target [Repository](Repository.md) has rejected the Deposit |
+| failed | A failure occurred while performing the deposit, it may be re-tried later. |
 | accepted | The target [Repository](Repository.md) has accepted the [Files](File.md) into the repository and they are pending publication if not published already |
