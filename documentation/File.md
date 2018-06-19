@@ -24,4 +24,5 @@ Status options for grant
 | ------------- | ------------- |
 | manuscript | Author accepted manuscript |
 | supplemental | Supplemental material for the [Publication](Publication.md) |
-| tbd | tbd |
+| figure | An image, data plot, map, or schematic |
+| table | Tabular data |
