@@ -19,9 +19,20 @@ A [Submission](Submission.md) can have multiple Deposits, each to a different [R
 
 These are the possible statuses for a Deposit in the order they could occur. Note that not all repositories will go through every status.
 
-| Value  	| Description 
-| --------- | -------------
-| submitted | PASS has sent a package to the target [Repository](Repository.md) and is waiting for an update on the status
-| rejected  | The target [Repository](Repository.md) has rejected the Deposit
-| failed    | A failure occurred while performing the deposit, it may be re-tried later.
-| accepted  | The target [Repository](Repository.md) has accepted the [Files](File.md) into the repository and they are pending publication if not published already
+<dl>
+  <dt>Intermediate status</dt>
+  <dd>A Deposit with an <em>intermediate</em> status indicates that the processing of the Deposit is not yet
+      complete.  At some indeterminate point in the future, the status <em>may</em> be updated to a <em>terminal</em>
+      state.
+  </dd>
+  <dt>Terminal status</dt>
+  <dd>A Deposit with a <em>terminal</em> status indicates that the processing of the Deposit is complete.
+  </dd>
+</dl>
+
+| Value  	| URI                                           | State        | Description 
+| --------- | ---                                           | -----        | ---
+| submitted | http://oapass.org/ns/status/deposit#submitted | Intermediate | PASS has sent a package to the target [Repository](Repository.md) and is waiting for an update on the status
+| rejected  | http://oapass.org/ns/status/deposit#rejected  | Terminal     | The target [Repository](Repository.md) has rejected the Deposit
+| failed    | http://oapass.org/ns/status/deposit#failed    | Intermediate | A failure occurred while performing the deposit, it may be re-tried later.
+| accepted  | http://oapass.org/ns/status/deposit#accepted  | Terminal     | The target [Repository](Repository.md) has accepted the [Files](File.md) into the repository and they are pending publication if not published already
