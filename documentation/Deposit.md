@@ -30,9 +30,9 @@ These are the possible statuses for a Deposit in the order they could occur. Not
   </dd>
 </dl>
 
-| Value  	| URI                                           | State        | Description 
-| --------- | ---                                           | -----        | ---
-| submitted | http://oapass.org/ns/status/deposit#submitted | Intermediate | PASS has sent a package to the target [Repository](Repository.md) and is waiting for an update on the status
-| rejected  | http://oapass.org/ns/status/deposit#rejected  | Terminal     | The target [Repository](Repository.md) has rejected the Deposit
-| failed    | http://oapass.org/ns/status/deposit#failed    | Intermediate | A failure occurred while performing the deposit, it may be re-tried later.
-| accepted  | http://oapass.org/ns/status/deposit#accepted  | Terminal     | The target [Repository](Repository.md) has accepted the [Files](File.md) into the repository and they are pending publication if not published already
+| Value     | State        | Description 
+| --------- | -----        | ---
+| submitted | Intermediate | PASS has sent a package to the target [Repository](Repository.md) and is waiting for an update on the status
+| rejected  | Terminal     | The target [Repository](Repository.md) has rejected the Deposit
+| failed    | Intermediate | A failure occurred while performing the deposit, it may be re-tried later.
+| accepted  | Terminal     | The target [Repository](Repository.md) has accepted the [Files](File.md) into the repository and they are pending publication if not published already
