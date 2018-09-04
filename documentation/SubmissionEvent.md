@@ -9,7 +9,8 @@ The SubmissionEvent model captures significant events that are performed by an a
 | performedBy* | URI | URI of the [User](User.md) responsible for performing the event |
 | performerRole | Enum ([_see list below_](#performer-role-options)) | Role of the person performing the event. |
 | submission*  | URI | URI of the [Submission](Submission.md) that the event relates to |
-| comment | String | A comment associated with the event. This can be added by the User through the UI to communicate with the User that must repond to the event. |
+| comment | String | A comment relevant to the SubmissionEvent. For example, when a `changes-requested` event occurs, this might be added by the User through the UI to communicate what changes should be made. |
+| link | URI | A resource relevant to the SubmissionEvent. For example, when a `changes-requested` event occurs, this may contain an Ember application URL to the affected Submission. |
 
 *required 
 

@@ -48,6 +48,7 @@
     "issue": {"@id": "pass:issue"},
     "issns": {"@id": "pass:issn", "@container": "@set"},
     "lastName": {"@id": "pass:lastName"},
+    "link": {"@id": "pass:link", "@type": "@id"},
     "journal": {"@id": "pass:journal", "@type": "@id"},
     "journalName": {"@id": "pass:journalName"},
     "localKey": {"@id": "pass:localKey"},
