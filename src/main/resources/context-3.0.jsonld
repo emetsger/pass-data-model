@@ -22,6 +22,7 @@
     "accessUrl": {"@id": "pass:accessUrl", "@type": "@id"},
     "affiliation": {"@id": "pass:affiliation"},
     "agreementText": {"@id": "pass:agreementText"},
+    "aggregatedDepositStatus": {"@id": "pass:aggregatedDepositStatus"},
     "awardDate": {"@id": "pass:awardDate", "@type": "xsd:dateTime"},
     "awardNumber": {"@id": "pass:awardNumber"},
     "awardStatus": {"@id": "pass:awardStatus"},
