@@ -12,8 +12,7 @@ A User of the PASS system. This includes prefered person information that can be
 | displayName | String | Name for display. Separate names may not be available, but a person should always at least have a display name. |
 | email | String | Contact email for User |
 | affiliation | String | The affiliation for the User. This could, for example, include department affiliation |
-| institutionalId* | String | ID assigned by User's institution (JHED-ID for JHU) |
-| localKey | String | A key used to look up the User in a local system. In the case of JHU, this is the ID from the person's COEUS record, which is different from the JHED-ID. |
+| locatorIds* |  List[String] | A list of ids associated with the user by various system that PASS interacts with. The value of each entry would be in the form of : `domain:type:value`. For example, `["johnshopkins.edu:hopkinsid:DRA2D", "johnshopkins.edu:employeeid:12345", "johnshopkins.edu:jhed:bostaur1"]` |
 | orcidId | String | ORCID ID for the User |
 | roles* | List[Enum] ([_see list below_](#role-options)) | User roles |
 
