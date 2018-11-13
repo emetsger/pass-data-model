@@ -11,7 +11,7 @@ A Repository is the target of a [Deposit](Deposit.md). It is a platform where [c
 | agreementText | String | The legal text that a `submitter` must agree to in order to submit a publication to this Repository |
 | formSchema | String | Stringified JSON representing a form template to be loaded by the front-end when this Repository is selected |
 | integrationType | Enum ([_see list below_](#integration-type-options)) | Type of integration that PASS has with the Repository |
-|repositoryKey | String | Key that is unique to this Repository instance within PASS.  Used to look up the Repository when its URI is not available (e.g. prior to the creation of this Repository resource in Fedora). |
+|repositoryKey | String | Key that is unique to this Repository instance within PASS.  Used to look up the Repository when its URI is not available (e.g. prior to the creation of this Repository resource in Fedora). See below for a [_list of currently used keys_](#repository-key-values). |
 
 *required 
 
@@ -26,3 +26,14 @@ These are the possible types of integration a Repository can have with PASS.
 | full | PASS can make [Deposits](Deposit.md) to this Repository, and will received updates about its status |
 | one-way | PASS can make [Deposits](Deposit.md) to this Repository but will not automatically receive updates about its status |
 | web-link | A deposit cannot automatically be made to this Repository from PASS, only a web link can be created. |
+
+## Repository key values
+
+These are the repository keys currently used in PASS. This list will grow as more repositories are supported.
+
+| Value  		  | Repository name |
+| --------------- | ------------- |
+| pmc | [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/) |
+| jscholarship | [JScholarship](https://jscholarship.library.jhu.edu/) |
+| eric | [Education Resources Information Center](https://eric.ed.gov/) (ERIC) |
+| dec | [Development Experience Clearinghouse](https://dec.usaid.gov/dec/) (DEC) |
