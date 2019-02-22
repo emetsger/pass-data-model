@@ -39,3 +39,6 @@ JSON-LD contexts used to interpret PASS JSON as RDF can be found in the [src/mai
 ```
 "@context": "https://oa-pass.github.io/pass-data-model/src/main/resources/context.jsonld"
 ```
+## Elasticsearch Index Configurations
+
+The configuration of the Elasticsearch index must be consistent with the data model and context. See https://github.com/OA-PASS/pass-indexer for details.
