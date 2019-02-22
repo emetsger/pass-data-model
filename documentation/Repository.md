@@ -9,9 +9,11 @@ A Repository is the target of a [Deposit](Deposit.md). It is a platform where [c
 | description | String | Several sentence description of repository |
 | url | URI | URL to the homepage of the repository so that PASS users can view the platform before deciding whether to participate in it |
 | agreementText | String | The legal text that a `submitter` must agree to in order to submit a publication to this Repository |
-| formSchema | String | Stringified JSON representing a form template to be loaded by the front-end when this Repository is selected |
+| formSchema | String | _(deprecated- do not use this.   Use `schema` instead)_ Stringified JSON representing a form template to be loaded by the front-end when this Repository is selected |
 | integrationType | Enum ([_see list below_](#integration-type-options)) | Type of integration that PASS has with the Repository |
 |repositoryKey | String | Key that is unique to this Repository instance within PASS.  Used to look up the Repository when its URI is not available (e.g. prior to the creation of this Repository resource in Fedora). See below for a [_list of currently used keys_](#repository-key-values). |
+| schemas | List[URI] | Contains a list of URLs that link to JSON schema documents describing the repository's metadata requirements |
+
 
 *required 
 
