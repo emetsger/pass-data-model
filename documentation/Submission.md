@@ -18,7 +18,8 @@ Note that the source of a Submission record is not always a PASS User. In some i
 | submitterName | String | Name of submitter. This field is used when a preparer nominates a submitter that is not yet a PASS [User](User.md). The name is temporarily stored for use in communications with the submitter until a `User.id` is available. Once there is a URI for `submitter`, the `submitterName` should be null. |
 | submitterEmail | URI | Email of submitter, formatted as a URI e.g. `mailto:first.last@example.com`. This field is used when a preparer nominates a submitter that is not yet a PASS [User](User.md). The email value is temporarily stored for use in communications with the submitter until a `User.id` is available. Once there is a URI for `submitter`, the `submitterEmail` should be null. |
 | preparers | List[URI] | A list of URIs for the User(s) who prepared, or who could contribute to the preparation of, the Submission. Preparers can edit the content of the Submission (describe the [Publication](Publication.md), add [Grants](Grant.md), select [Repositories](Repository.md)) but cannot approve Repository agreements, or submit the publication - these tasks must be performed by the `submitter`. |
-| grants | List[URI] | List of URIs [Grants](Grant.md) that are associated with the User and are relevant to the Publication being submitted | 
+| grants | List[URI] | List of URIs [Grants](Grant.md) that are associated with the User and are relevant to the Publication being submitted |
+| effectivePolicies | List[URI] | List URIs for [Policies](Policy.md) that will be satisfied via deposit through PASS |
 
 *required 
 

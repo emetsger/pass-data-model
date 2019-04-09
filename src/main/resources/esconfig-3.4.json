@@ -64,6 +64,7 @@
         "directFunder": {"type": "keyword", "normalizer": "fedora_uri"},
         "displayName": {"type": "text", "analyzer": "simple"},        
         "doi": {"type": "keyword", "normalizer": "ignorecase"},
+        "effectivePolicies": {"type": "keyword", "normalizer": "fedora_uri"},
         "email": {"type": "keyword", "normalizer": "ignorecase"},
         "endDate": {"type": "date"},
         "eventType": {"type": "keyword"},
