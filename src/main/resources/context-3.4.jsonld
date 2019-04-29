@@ -47,7 +47,7 @@
     "institution": {"@id": "pass:institution", "@type": "@id"},
     "integrationType": {"@id": "pass:integrationType"},
     "issue": {"@id": "pass:issue"},
-    "issns": {"@id": "pass:issn", "@container": "@set"},
+    "issns": {"@id": "pass:issns", "@container": "@set"},
     "lastName": {"@id": "pass:lastName"},
     "link": {"@id": "pass:link", "@type": "@id"},
     "locatorIds": {"@id": "pass:locatorIds", "@container": "@set"},
