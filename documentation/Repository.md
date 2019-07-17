@@ -36,6 +36,7 @@ These are the repository keys currently used in PASS. This list will grow as mor
 | Value  		  | Repository name |
 | --------------- | ------------- |
 | pmc | [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/) |
-| jscholarship | [JScholarship](https://jscholarship.library.jhu.edu/) |
+| jscholarship | [Johns Hopkins JScholarship](https://jscholarship.library.jhu.edu/) |
 | eric | [Education Resources Information Center](https://eric.ed.gov/) (ERIC) |
 | dec | [Development Experience Clearinghouse](https://dec.usaid.gov/dec/) (DEC) |
+| dash | [Harvard DASH](https://dash.harvard.edu/) |
