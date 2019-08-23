@@ -11,8 +11,8 @@ A User of the PASS system. This includes prefered person information that can be
 | lastName | String | Last name(s) of User |
 | displayName | String | Name for display. Separate names may not be available, but a person should always at least have a display name. |
 | email | String | Contact email for User |
-| affiliation | String | The affiliation for the User. This could, for example, include department affiliation |
-| locatorIds* |  List[String] | A list of ids associated with the user by various system that PASS interacts with. The value of each entry would be in the form of : `domain:type:value`. For example, `["johnshopkins.edu:hopkinsid:DRA2D", "johnshopkins.edu:employeeid:12345", "johnshopkins.edu:jhed:bostaur1"]` |
+| affiliation | List[String] | The affiliation(s) of the User with their institution, for example `STAFF@inst.edu`.  An institution may have multiple organizational units, and a User may have a different affiliation with any given OU.  A User having an affiliation with multiple OUs in an institution would have multiple values, for example `FACULTY@medicine.inst.edu` and `STUDENT@engineering.inst.edu`. |
+| locatorIds* |  List[String] | A list of ids associated with the user by various system that PASS interacts with. The value of each entry would be in the form of : `domain:type:value`. For example, `["johnshopkins.edu:hopkinsid:DRA2D", "johnshopkins.edu:employeeid:12345", "johnshopkins.edu:jhed:bostaur1"]`.  The following values for `type` are considered deprecated: `jhed`, `hopkinsid`.  The preferred types are `eppn` and `unique-id`, respectively. |
 | orcidId | String | ORCID ID for the User |
 | roles* | List[Enum] ([_see list below_](#role-options)) | User roles |
 
